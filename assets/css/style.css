@@ -1,0 +1,62 @@
+/* body {
+    background-image: url ("assets/images/firstChoice.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+} */
+
+ .jumbotron {
+   /* background: add an IMAGE HERE */
+    text-align: center;
+    width: 90%;
+    margin: 10px 0 0 70px;  
+    border: 1px solid #303031;
+}  
+
+.display-4,
+.lead {
+    padding-top: 20px;
+}
+
+#train-times  {
+    background: #f0c8ae;
+    width: 90%;
+    height: 150px;
+    margin: 10px 0 0 70px;
+    border: 1px solid #303031;
+}
+
+#train-times p {
+    background: #303031;
+    color: #fff;
+    padding-left: 20px;    
+}
+
+#train-form   {
+    background: #f0c8ae;
+    width: 90%;
+    height: 350px;
+    margin: 15px 0 0 70px;
+    border: 1px solid #303031;
+}
+
+#train-form p {
+    background: #303031;
+    color: #fff;
+    padding-left: 20px;    
+}
+
+
+
+.form-group {
+    padding: 0;
+    margin: 0 20px 0 20px;
+    line-height: 5px;
+}
+
+.btn {
+    margin: 0 5px 0 20px;
+}
+
+
