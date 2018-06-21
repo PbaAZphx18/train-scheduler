@@ -1,62 +1,35 @@
-/* body {
-    background-image: url ("assets/images/firstChoice.jpeg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black;
-} */
-
- .jumbotron {
-   /* background: add an IMAGE HERE */
-    text-align: center;
-    width: 90%;
-    margin: 10px 0 0 70px;  
-    border: 1px solid #303031;
-}  
-
-.display-4,
-.lead {
-    padding-top: 20px;
+panel{
+	width: 100%;
 }
 
-#train-times  {
-    background: #f0c8ae;
-    width: 90%;
-    height: 150px;
-    margin: 10px 0 0 70px;
-    border: 1px solid #303031;
+.jumbotron{
+	background-color: #303031;
+	color: #eeeecc;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	border: 1px solid #303031;
 }
 
-#train-times p {
-    background: #303031;
-    color: #fff;
-    padding-left: 20px;    
+.panel-heading{
+	padding-top: 0.25%;
+	background-color: #303031;
 }
 
-#train-form   {
-    background: #f0c8ae;
-    width: 90%;
-    height: 350px;
-    margin: 15px 0 0 70px;
-    border: 1px solid #303031;
+.panel-body{
+	border: 1px solid #303031;
+	color: black;
 }
 
-#train-form p {
-    background: #303031;
-    color: #fff;
-    padding-left: 20px;    
+#panelHeading {
+	background: #303031;
+	color: #eeeecc;
+	padding-top: 10px;
+	border: 1px solid #303031;
+
 }
 
-
-
-.form-group {
-    padding: 0;
-    margin: 0 20px 0 20px;
-    line-height: 5px;
+#add-train {
+	background-color: #303031;
+	color: #eeeecc;
+	border: 1px solid #303031;
 }
-
-.btn {
-    margin: 0 5px 0 20px;
-}
-
-
