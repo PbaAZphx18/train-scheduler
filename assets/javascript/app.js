@@ -1,3 +1,8 @@
+//having a hard time with APIs and figuring out how to use and what to look for within docs in order to understand better
+//Had to copy most of this from net but have gone over to try and understand functionality.  Added comments and questions to 
+//refer to and get help from my tutor.
+
+
 $(document).ready(function(){
 
     // Initialize Firebase
