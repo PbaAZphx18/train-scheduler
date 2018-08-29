@@ -17,7 +17,7 @@ $(document).ready(function(){
     firebase.initializeApp(config);
     // A variable to reference the database.
     var database = firebase.database();
-
+    console.table(database.ref());
     // Variables for the onClick event
     var name;
     var destination;
@@ -28,6 +28,7 @@ $(document).ready(function(){
     //targeting the submit button.  Once pressed, values from each line stored in firebase and 
     //shows under train schedule
     $("#add-train").on("click", function() {
+        
         // prevent page from reloading
         event.preventDefault();
         // Storing and retreiving new train data
@@ -50,18 +51,18 @@ $(document).ready(function(){
         $("form")[0].reset();
     });
 
-        //not quite grasping this...how do you get or know to "child add" and not just append????????
+        //not quite grasping this...how do you get or know to use "child add" and not just append????????
     database.ref().on("child_added", function(childSnapshot) {
         var nextArr;
         var minAway;
-        // Change year so first train comes before now
+        // Change year so first train comes before now//
         var firstTrainNew = moment(childSnapshot.val().firstTrain, "hh:mm").subtract(1, "years");
-        // Difference between the current and firstTrain
+        // Difference between the current and firstTrain//
         var diffTime = moment().diff(moment(firstTrainNew), "minutes");
         var remainder = diffTime % childSnapshot.val().frequency;
-        // Minutes until next train
+        // Minutes until next train//
         var minAway = childSnapshot.val().frequency - remainder;
-        // Next train time
+        // Next train time//
         var nextTrain = moment().add(minAway, "minutes");
         nextTrain = moment(nextTrain).format("hh:mm");
 
